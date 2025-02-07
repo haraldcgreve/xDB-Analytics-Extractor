@@ -17,7 +17,12 @@ public class ExportRepository
         IOUtils.EnsureParentDirectoriesExist(_sqliteDbPath);
         InitializeDatabase();
     }
-    private static void InitializeDatabase()
+
+	public ExportRepository()
+	{
+	}
+
+	private static void InitializeDatabase()
     {
         using (var connection = new SqliteConnection(_connectionString))
         {
