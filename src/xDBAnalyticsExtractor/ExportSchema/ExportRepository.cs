@@ -18,11 +18,11 @@ public class ExportRepository
         InitializeDatabase();
     }
 
-	public ExportRepository()
-	{
-	}
+    public ExportRepository()
+    {
+    }
 
-	private static void InitializeDatabase()
+    private static void InitializeDatabase()
     {
         using (var connection = new SqliteConnection(_connectionString))
         {
